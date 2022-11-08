@@ -5,6 +5,17 @@
 #include <stdlib.h>
 
 /**
+ * enum bool - Boolean values enumeration.
+ * @false: Equals 0.
+ * @true: Equals 1.
+ */
+typedef enum bool
+{
+	false = 0,
+	true
+} bool;
+
+/**
  * struct listint_s - Doubly linked list node
  *
  * @n: Integer stored in the node
@@ -26,8 +37,10 @@ void quick_sort(int *array, size_t size);
 void selection_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void bubble_sort(int *array, size_t size);
-
-
+void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
+int lomuto_partition(int *array, size_t size, int left, int right);
+void lomuto_sort(int *array, size_t size, int left, int right);
+void quick_sort(int *array, size_t size);
 
 
 
