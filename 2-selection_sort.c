@@ -15,6 +15,12 @@ void swap_values(int *a, int *b)
     *b = temp;
 }
 
+/**
+ * selection_sort - sel sort
+ * 
+ * @array: array 
+ * @size: size 
+ */
 void selection_sort(int *array, size_t size)
 {
 	int *minimum;

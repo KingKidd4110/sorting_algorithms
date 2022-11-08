@@ -16,7 +16,7 @@ void swap_values(int *a, int *b)
 }
 
 /**
- * lomuto_partition - Order a subset of an array as per lomuto scheme
+ * lomuto_partition - Order a subset array as per lomuto scheme
  * @array: The array of ints.
  * @size: Size of array.
  * @left: The starting idx of the subset to order.
