@@ -25,6 +25,7 @@ void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2)
  * insertion_sort - Insertion sort function
  * @list: list to be sorted
  * 
+ * Description: sorts list
  */
 void insertion_sort_list(listint_t **list)
 {

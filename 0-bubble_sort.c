@@ -20,6 +20,7 @@ void swap_values(int *a, int *b)
  * @array: array to be sorted
  * @size: int size of the array
  * 
+ * Description: sorts data
  */
 void bubble_sort(int *array, size_t size)
 {

@@ -20,6 +20,8 @@ void swap_values(int *a, int *b)
  * 
  * @array: array 
  * @size: size 
+ * 
+ * Description: sorts array
  */
 void selection_sort(int *array, size_t size)
 {
