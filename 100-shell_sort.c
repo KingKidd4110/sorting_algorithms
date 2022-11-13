@@ -4,22 +4,20 @@
  * swap_values - swaps values
  * @a: int
  * @b: int
- * 
  */
 void swap_values(int *a, int *b)
 {
-    int tmp;
+	int tmp;
 
-    tmp = *a;
-    *a = *b;
-    *b = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 /**
  * shell_sort - shell sort
  * @array: array
  * @size: array size
- * 
  */
 void shell_sort(int *array, size_t size)
 {

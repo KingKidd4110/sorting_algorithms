@@ -24,13 +24,12 @@ typedef enum bool
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
-
 /*swap structure*/
-void swap_values(int *a, int *b); 
+void swap_values(int *a, int *b);
 
 /*prototypes*/
 void print_list(const listint_t *list);
@@ -76,8 +75,9 @@ void counting_sort_rad(int *array, size_t size, int sig, int *buff);
 #define DOWN 1
 
 void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
-		char flow);
-void bitonic_sequence(int *array, size_t size, size_t start, size_t seq, char flow);
+	       char flow);
+void bitonic_sequence(int *array, size_t size, size_t start, size_t seq,
+	       char flow);
 
 /* prototypes for quick sort hoare*/
 int hoare_part_order(int *array, size_t size, int left, int right);

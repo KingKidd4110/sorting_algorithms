@@ -4,15 +4,14 @@
  * swap_values - swaps values
  * @a: int
  * @b: int
- * 
  */
 void swap_values(int *a, int *b)
 {
-    int temp;
+	int temp;
 
-    temp = *a;
-    *a = *b;
-    *b = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /**
@@ -21,12 +20,11 @@ void swap_values(int *a, int *b)
  * @size: Size of array.
  * @left: The starting idx of the subset to order.
  * @right: The ending idx of the subset to order.
- *
  * Return: The final partition idx.
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
-	 int *pivot, upper, lower;
+	int *pivot, upper, lower;
 
 	pivot = array + right;
 	for (upper = lower = left; lower < right; lower++)
@@ -55,9 +53,8 @@ int lomuto_partition(int *array, size_t size, int left, int right)
  * lomuto_sort - Implement the quicksort algorithm through recursion.
  * @array: Array of integers to sort.
  * @size: Size of array.
- * @left: Starting index of the array partition 
- * @right: Ending index of the array partition 
- *
+ * @left: Starting index of the array partition
+ * @right: Ending index of the array partition
  */
 void lomuto_sort(int *array, size_t size, int left, int right)
 {
@@ -75,7 +72,6 @@ void lomuto_sort(int *array, size_t size, int left, int right)
  * quick_sort - Sort array
  * @array: An array of ints.
  * @size: The size ofarray.
- *
  * Description: Uses the Lomuto partition scheme.
  */
 void quick_sort(int *array, size_t size)
@@ -86,8 +82,3 @@ void quick_sort(int *array, size_t size)
 	lomuto_sort(array, size, 0, size - 1);
 }
 
-/**
- * learnt about lomuto partition scheme thanks to peers and 
- * codecamp organization
- * 
- */

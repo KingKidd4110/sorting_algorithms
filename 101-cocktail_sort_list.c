@@ -2,8 +2,7 @@
 
 /**
  * swap_node_front - swap ints with node aheas of it
- * 
- * @list: node hear 
+ * @list: node hear
  * @tail: node tail
  * @shaker: pointer to current swap node fr shaker function
  */
@@ -27,12 +26,12 @@ void swap_node_front(listint_t **list, listint_t **tail, listint_t **shaker)
 }
 
 /**
- * swap_node_back - node to swap with int node behind 
- * 
- * list: list arr
- * tail: tain of list arr
- * shaker: pointer to current swp node from shkr func 
+ * swap_node_back - node to swap with int node behind
+ * @list: list arr
+ * @tail: tain of list arr
+ * @shaker: pointer to current swp node from shkr func
  */
+
 void swap_node_back(listint_t **list, listint_t **tail, listint_t **shaker)
 {
 	listint_t *tmp = (*shaker)->prev;
@@ -53,8 +52,7 @@ void swap_node_back(listint_t **list, listint_t **tail, listint_t **shaker)
 }
 
 /**
- * cocktail_sort_list: sorts list with cocktail algo
- * 
+ * cocktail_sort_list - sorts list with cocktail algo
  * @list: arr list to be sorted
  */
 void cocktail_sort_list(listint_t **list)

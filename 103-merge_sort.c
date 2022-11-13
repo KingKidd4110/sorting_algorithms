@@ -1,3 +1,4 @@
+#include "sort.h"
 
 /**
  * merge_subarr - Sorts a sub array of ints
@@ -50,11 +51,10 @@ void merge_sort_rec(int *subarr, int *buff, size_t front, size_t back)
 		merge_subarr(subarr, buff, front, mid, back);
 	}
 }
-
 /**
- * merge_sort - merge sort 
+ * merge_sort - merge sort
  * @array: array of inte
- * @size: The size of the array.
+ * @size: The size of the array
  */
 void merge_sort(int *array, size_t size)
 {
